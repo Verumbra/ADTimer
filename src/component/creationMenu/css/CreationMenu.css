@@ -1,0 +1,105 @@
+
+#creatio{
+--primary-color: #C7C2ED;
+--secondary-color: #A1D0CE;
+--accent-color1: #EDB7CD;
+--accent-color2: #A36D84;
+--backdrop-color1: #495756;
+--backdrop-color2: #262929;
+--font-color-dark: #151717;}
+
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+
+
+}
+
+.creation-menu-title {
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-menuAddTimer {
+    width: 35px;
+    height: 35px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: var(--primary-color);
+    padding: 1px;
+}
+.btm-menuAddTimer:hover {
+    background-color: var(--secondary-color);
+}
+.round {
+    border-radius: 50%;
+}
+
+.add-Icon {
+    position: relative;
+    align-items: center;
+    right: 9px;
+    fill: var(--backdrop-color1);
+    height: 16px;
+    width: 16px;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0%;
+    background-color: #343434;
+    margin-top: 0px;
+    padding: 3px;
+    width: 300px;
+    overflow: hidden;
+}
+.open {
+    display: block;
+    border-radius: 0 0 0 15px;
+}
+
+
+
+
+.addMenuTitle {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-left: 3px;
+}
+
+
+.title-form {
+    display: flex;
+    width: 85%;
+}
+
+.menu-timepicker {
+    margin: 10px;
+}
+
+.menu-imp-selector {
+    margin: 10px;
+}
+
+.btm-submitButton {
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px auto;
+    margin-left: 20px;
+    background-color: var(--secondary-color);
+    color: var(--font-color-dark);
+
+}
+
+.logo {
+    align-self: center;
+    height: 35px;
+    width: 35px;
+}

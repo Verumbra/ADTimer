@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+}
+#root {
+  max-width: 2160px;
+  margin: 0 auto;
+  --primary-color: #C7C2ED;
+  --secondary-color: #A1D0CE;
+  --accent-color1: #EDB7CD;
+  --accent-color2: #A36D84;
+  --backdrop-color1: #495756;
+  --backdrop-color2: #262929;
+  --font-color-dark: #151717;
+
+}
+
+.app-Bar {
+    background-color: #343434;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.Nav-Title {
+    flex-grow: 1;
+    position: relative;
+    align-self: center;
+    justify-content: left;
+    text-align: left;
+    margin-left: 20px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+
+.app-Bar a.split {
+    float: right;
+}
+
+.timer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    width: 99%;
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+    margin-right: 4px;
+    align-self: center;
+    
+}
+
+
+
+
+.TimerContainer {
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.logo {
+    margin: 5px;
+}
+
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    
+    
+}
+
+.btm-menuAddTimer {
+    width: 45px;
+    height: 45px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: var(--primary-color);
+}
+
+.btm-menuAddTimer:hover {
+    background-color: var(--secondary-color);
+}
+
+.round {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.addMenu-divider {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    color: var(--accent-color2);
+    
+}
+
+
+
+
+
+
+
+
+
+

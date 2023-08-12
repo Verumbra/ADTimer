@@ -1,0 +1,79 @@
+.slicingOptions {
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #262929;
+    border-radius: 25px;
+}
+
+.slicing-dropdown {
+    float: left;
+    overflow: hidden;
+    width: inherit;
+    
+
+}
+
+.btn-sli-dropdown {
+    background-color: transparent;
+    width: 255px;
+    
+}
+
+.sli-drop-contents {
+    display: none;
+    position: absolute;
+    width: 255px;
+    background-color: #262929;
+    border-radius: 0;
+    overflow: hidden;
+    
+
+    z-index: 1;
+}
+
+.btn-slice-list-item {
+    background-color: transparent;
+}
+.btn-slice-list-item:hover {
+    background-color: #495756;
+}
+
+.slicingOptions.open {
+    border-radius: 15px 15px 0 0;
+}
+.sli-drop-contents.open {
+    display: grid;
+    border-radius: 0 0 25px 25px;
+}
+
+
+
+
+/*.slicingDropdown {
+    width: 260px;
+    margin: 20px;
+}
+
+
+.drop-header {
+
+}
+
+.btn-dropdown {
+
+}
+
+.drop-list {
+
+}
+
+.btn-slice-list-item {
+
+}
+
+.hidden {
+    display: none;
+}

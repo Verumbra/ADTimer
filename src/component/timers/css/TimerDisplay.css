@@ -1,0 +1,11 @@
+.main-TimerDisplay {
+    display: flexbox;
+    position: relative;
+    
+    
+}
+
+
+.displayed {
+    display: none;
+}

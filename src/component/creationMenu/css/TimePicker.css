@@ -1,0 +1,102 @@
+:root {
+    --inactive: #c7c2ed;
+    --active: #2b662e;
+}
+
+/*Chrome, Safari, Edge, Opera*/
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+ }
+/* Firefox*/
+ input[type="number"] {
+    -moz-appearance: textfield;
+ }
+
+.TimerPicker {
+    min-width: 200px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    position:relative;
+    top: 150px;
+    transform: scale(1.5);
+    
+    
+}
+
+.time-inputs {
+    border: 1px solid var(--inactive);
+    width: fit-content;
+    color: #A1D0CE;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 21px;
+    margin-bottom: 10px;
+
+}
+
+
+
+input[type="number"] {
+    min-width: 60px;
+    max-width: 80px;
+    height: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: auto 15px;
+    text-align: center;
+    color: #A1D0CE;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+input[type="number"]:hover {
+    
+    background-color: #262929;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 2px 1px #c7c2ed;
+    background-color: #262929;
+    outline: none;
+}
+
+input.invalid:focus {
+    outline: 3px solid red;
+}
+
+label.timepicker-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    z-index: 1;
+}
+
+.timepicker-label {
+    font-size: 0.55em;
+    position: absolute;
+    top: 7.5px;
+}
+
+.timepicker-label.lbl-hrName {
+    left: 35%;
+}
+
+.timepicker-label.lbl-minName {
+    left: 30%;
+}
+
+.timepicker-label.lbl-secName {
+    left: 30%;
+}
+
+#timeFrame, input {
+    border-radius: 8px;
+}

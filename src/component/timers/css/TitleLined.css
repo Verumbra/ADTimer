@@ -1,0 +1,53 @@
+
+.title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.title-text {
+    display: flex;
+    flex-grow: 1;
+    font-family: Comfortaa;
+    font-weight: 300;
+    font-size: large;
+    text-align: right;
+    margin-right: 15px;
+    white-space: nowrap;
+    
+    /*z-index: 1;*/
+}
+
+
+.line-wraspper {
+    
+    position: relative;
+    
+    /*margin-right: 2px;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.title-divider {
+    position: relative;
+    left: 0;
+    
+    right: 0;
+    top: 50%;
+    margin-left: 50px;
+
+    
+    /*background-color: white;*/
+    
+}
+
+.ruler-svg {
+    
+    
+ 
+}
