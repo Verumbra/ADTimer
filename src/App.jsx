@@ -85,7 +85,7 @@ function App() {
 
           <div>
             <div className ='timer-list' ref={timerListRef}>
-              {Timer.map(Timer => {console.log("here in the map the current key is " + Timer.timerID);
+              {Timer.map(Timer => {
                 return <>{/*<div key={Timer.timerID}  className="timer">*/}
                     <TimeFrame key={Timer.timerID}
                     timerID={Timer.timerID}

@@ -14,6 +14,8 @@ export function SubTimerFrame({duration, callback, subID, isDowntime, isCurrent}
         {/*Need to be extended to deturmand what format the timer needs to be in: determind between d/h/m/s, date, h/m/s, h/m/s/ms, ect. */}
     }
 
+    const [alarmTig, setAlarmTig] = useState('ON');
+
     const startDuration = useRef(convertDuration(duration));
     const triggerSet = useRef(true);
     const [on, setOn] = useState((isCurrent===subID?true:false));
@@ -41,7 +43,7 @@ export function SubTimerFrame({duration, callback, subID, isDowntime, isCurrent}
 
 
 
-    useEffect(() =>{
+    {/*useEffect(() =>{
             setOn((isCurrent===subID)?true:false);
     },[isCurrent]);
 
@@ -55,7 +57,34 @@ export function SubTimerFrame({duration, callback, subID, isDowntime, isCurrent}
             else {
                 currentDuration<1? triggering():"";
             }
-    }, [currentDuration, setCurrentDuration, on, triggering, triggered])
+    }, [currentDuration, setCurrentDuration, on, triggering, triggered])*/}
+
+    useEffect(() => {
+        const check = subID === isCurrent ? 'ON' : 'OFF';
+        console.log("subTimer@64:  " + `${check}${alarmTig}`);
+        switch (`${check}${alarmTig}`) {
+            case 'ONON':
+                if (currentDuration > 0) {const interval = setInterval(() => {
+                    setCurrentDuration(currentDuration -1);
+                }, 1000);
+                return () => {clearInterval(interval);}
+                }
+                else {
+                    setAlarmTig('OFF');
+                }
+                break;
+            case 'OFFON':
+
+                break;
+            case 'ONOFF':
+                playAudio();
+                callback("FINNESHED", subID);
+                // callback is a functioin in the parent component that changes isCurrent value
+                // and delete finneshed timers and moves the que up for the next one.
+                break;
+
+        }
+    },[isCurrent,currentDuration,alarmTig]);
 
     return (
         <div className ="SubTimerFrame">
@@ -67,3 +96,6 @@ export function SubTimerFrame({duration, callback, subID, isDowntime, isCurrent}
         </div>
     )
 }
+
+
+
